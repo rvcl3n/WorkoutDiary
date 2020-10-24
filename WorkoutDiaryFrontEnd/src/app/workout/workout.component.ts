@@ -10,6 +10,8 @@ export class WorkoutComponent implements OnInit {
 
   @Input() description: string;
 
+  @Input() workoutType: string;
+
   constructor() { }
 
   ngOnInit(): void {
