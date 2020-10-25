@@ -1,3 +1,4 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
@@ -14,9 +15,19 @@ export class WorkoutComponent implements OnInit {
 
   @Input() dateTime: string;
 
+  public isMouseHover: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  mouseEnter(): void {
+    this.isMouseHover = true;
+  }
+
+  mouseLeave(): void {
+    this.isMouseHover = false;
   }
 
 }

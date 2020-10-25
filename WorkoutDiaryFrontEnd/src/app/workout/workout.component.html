@@ -9,6 +9,11 @@
         </mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p>Description: {{description}}</p>
+        <div *ngIf="isMouseHover">
+          <p>Description: {{description}}</p>
+        </div>
+        <div *ngIf="!isMouseHover">
+          <p>&nbsp;</p>
+        </div>
       </mat-card-content>
 </mat-card>
