@@ -4,7 +4,8 @@ mat-card{
 }
 
 mat-card:hover{
-    background-color: cornflowerblue;
+    background-color: #6c6cff;
+    transform: translate3D(0,-1px,0) scale(1.01);
 }
 
 //Styles for titles - also overrided card title in styles.scss
