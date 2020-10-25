@@ -12,6 +12,8 @@ export class WorkoutComponent implements OnInit {
 
   @Input() workoutType: string;
 
+  @Input() dateTime: string;
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+//Here you choose an angular material out-of-box theme
 //@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
+//Apply basic styles for body and fonts
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+//Overriding default angular material theme text width for left and right align
+.mat-card-header-text{
+    width: 100% !important;
+}
