@@ -1,3 +1,43 @@
 mat-card{
     margin: 10px;
+    transition: 0.5s;
+}
+
+mat-card:hover{
+    background-color: #5eb8ff;
+    transform: translate3D(0,-1px,0) scale(1.01);
+    animation-name: mymove;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mymove {
+    0% {background-color: #5eb8ff;}
+    50% {background-color: #ff77a9;}
+    100% {background-color: #98ee99;}
+  }
+
+mat-card-content{
+    margin: 0 20px;
+}
+
+mat-card-content p{
+    opacity: 0;
+    transition:  opacity 0.5s ease-in-out;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+mat-card:hover mat-card-content p{
+    opacity: 1;
+}
+
+//Styles for titles - also overrided card title in styles.scss
+.container {
+    display: flex;
+}
+  
+.fill {
+    flex: 1;
 }
