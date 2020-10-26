@@ -14,7 +14,7 @@ export class WorkoutListComponent implements OnInit {
   [
      {id : '1', dateTime : '25/10/2020', description :'Progressive workout', workoutType: "Calisthenics"},
      {id : '2', dateTime : '23/10/2020', description :'Short workout', workoutType: "Calisthenics"},
-     {id : '3', dateTime : '18/10/2020', description :'New training programm', workoutType: "Gym"}
+     {id : '3', dateTime : '18/10/2020', description :'New training program', workoutType: "Gym"}
   ]
 
   ngOnInit(): void {
