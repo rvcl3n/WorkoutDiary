@@ -22,12 +22,4 @@ export class WorkoutComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  mouseEnter(): void {
-    this.isMouseHover = true;
-  }
-
-  mouseLeave(): void {
-    this.isMouseHover = false;
-  }
-
 }

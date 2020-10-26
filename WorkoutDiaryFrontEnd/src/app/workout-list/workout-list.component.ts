@@ -12,9 +12,9 @@ export class WorkoutListComponent implements OnInit {
 
   public workouts : Workout[] = 
   [
-     {id : '1', dateTime : '25/10/2020', description :'111111', workoutType: "Calisthenics"},
-     {id : '2', dateTime : '23/10/2020', description :'222222', workoutType: "Calisthenics"},
-     {id : '3', dateTime : '18/10/2020', description :'333333', workoutType: "Gym"}
+     {id : '1', dateTime : '25/10/2020', description :'Progressive workout', workoutType: "Calisthenics"},
+     {id : '2', dateTime : '23/10/2020', description :'Short workout', workoutType: "Calisthenics"},
+     {id : '3', dateTime : '18/10/2020', description :'New training programm', workoutType: "Gym"}
   ]
 
   ngOnInit(): void {
