@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./workout-card.component.scss']
 })
 export class WorkoutCardComponent implements OnInit {
+
+  @Input() description: string;
+
+  @Input() workoutType: string;
+
+  @Input() dateTime: string;
 
   constructor() { }
 

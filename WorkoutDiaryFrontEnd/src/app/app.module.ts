@@ -12,6 +12,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import { WorkoutModule } from './workout/workout.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {MatCardModule} from '@angular/material/card';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    //WorkoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

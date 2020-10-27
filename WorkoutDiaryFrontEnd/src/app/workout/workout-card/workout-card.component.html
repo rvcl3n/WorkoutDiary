@@ -1,1 +1,14 @@
-<p>workout-card works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+          <div class="container">
+          Workout: {{workoutType}}
+          <div class="fill"></div>
+          {{dateTime}}
+        </div>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+          <p>{{description}}</p>
+      </mat-card-content>
+</mat-card>

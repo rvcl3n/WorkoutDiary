@@ -1,1 +1,3 @@
-<p>workout-list works!</p>
+<div *ngFor="let workout of workouts">
+    <app-workout-card [description]="workout.description" [workoutType]="workout.workoutType" [dateTime]="workout.dateTime"></app-workout-card> 
+  </div>
