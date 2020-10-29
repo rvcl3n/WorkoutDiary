@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkoutPageComponent implements OnInit {
 
+  public description: string = "Progressive workout";
+
+  public workoutType: string;
+
+  public dateTime: string;
+
   constructor() { }
 
   ngOnInit(): void {
