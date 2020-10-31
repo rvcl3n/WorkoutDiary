@@ -15,6 +15,9 @@ import {MatCardModule} from '@angular/material/card';
   imports: [
     CommonModule,
     MatCardModule
+  ],
+  exports: [
+    WorkoutListComponent
   ]
 })
 export class WorkoutModule { }

@@ -6,7 +6,7 @@ import { WorkoutPageComponent } from './workout/workout-page/workout-page.compon
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
-  { path: 'workoutlist', component: WorkoutListComponent}, //I guess this approach doesn't support lazy loading
+  { path: 'workoutlist', component: WorkoutListComponent}, //I guess this approach doesn't support lazy loading and probably that's why I need to import Workout Module
   { path: 'workout', component: WorkoutPageComponent}
 ];
 
