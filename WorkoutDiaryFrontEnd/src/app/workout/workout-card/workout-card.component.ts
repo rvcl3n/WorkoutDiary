@@ -1,5 +1,6 @@
 import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-workout-card',
@@ -14,9 +15,12 @@ export class WorkoutCardComponent implements OnInit {
 
   @Input() dateTime: string;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
 
+  navigateToWorkout(): void {
+    this.router.navigate(['workout']);
+  }
 }

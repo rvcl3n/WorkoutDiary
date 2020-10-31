@@ -10,6 +10,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 
+import { WorkoutModule} from './workout/workout.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    WorkoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

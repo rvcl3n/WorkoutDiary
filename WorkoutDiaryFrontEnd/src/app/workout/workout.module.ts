@@ -5,16 +5,21 @@ import { WorkoutCardComponent } from './workout-card/workout-card.component';
 import { WorkoutPageComponent } from './workout-page/workout-page.component';
 
 import {MatCardModule} from '@angular/material/card';
+import { WorkoutExerciseComponent } from './workout-exercise/workout-exercise.component';
 
 @NgModule({
   declarations: [
     WorkoutListComponent, 
     WorkoutCardComponent, 
-    WorkoutPageComponent
+    WorkoutPageComponent, 
+    WorkoutExerciseComponent
   ],
   imports: [
     CommonModule,
     MatCardModule
+  ],
+  exports: [
+    WorkoutListComponent
   ]
 })
 export class WorkoutModule { }
