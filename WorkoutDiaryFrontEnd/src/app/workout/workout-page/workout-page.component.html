@@ -1,2 +1,8 @@
 <h1>{{description}}</h1>
 <hr/>
+<div *ngFor="let ex of exercises">
+    <app-workout-exercise [name]= "ex.name" [reps]="ex.reps" [description]="ex.description"></app-workout-exercise> 
+  </div>
+
+
+<p (click)="addExercise()">Add Exercise</p>

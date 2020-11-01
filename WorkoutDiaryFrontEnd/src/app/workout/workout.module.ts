@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { WorkoutListComponent } from './workout-list/workout-list.component';
 import { WorkoutCardComponent } from './workout-card/workout-card.component';
 import { WorkoutPageComponent } from './workout-page/workout-page.component';
+import { WorkoutExerciseComponent } from './workout-exercise/workout-exercise.component';
 
 import {MatCardModule} from '@angular/material/card';
-import { WorkoutExerciseComponent } from './workout-exercise/workout-exercise.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { WorkoutExerciseComponent } from './workout-exercise/workout-exercise.co
     MatCardModule
   ],
   exports: [
-    WorkoutListComponent
+    WorkoutListComponent,
+    WorkoutExerciseComponent
   ]
 })
 export class WorkoutModule { }
