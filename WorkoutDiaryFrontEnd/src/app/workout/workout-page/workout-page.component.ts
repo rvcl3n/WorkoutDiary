@@ -26,4 +26,8 @@ export class WorkoutPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addExercise(): void {
+    this.exercises.push({id : '4', name: "Test", reps: 10 });
+  }
+
 }
