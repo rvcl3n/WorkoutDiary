@@ -9,3 +9,19 @@ h1 {
     font-weight: 500;
     font-size: 40px;
 }
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#backLink {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(0, 153, 255);
+}
+
+#backLink:hover {
+  color: rgb(0, 225, 255);
+  cursor: pointer;
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { WorkoutExercise } from 'src/app/_models/workoutExercise.model';
 
 @Component({
@@ -21,13 +22,17 @@ export class WorkoutPageComponent implements OnInit {
      {id : '3', name: "Dips", reps: 10 }
   ];
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
 
   addExercise(): void {
     this.exercises.push({id : '4', name: "Test", reps: 10 });
+  }
+
+  navigateToWorkoutList(): void {
+    this.router.navigate(['workoutlist']);
   }
 
 }
