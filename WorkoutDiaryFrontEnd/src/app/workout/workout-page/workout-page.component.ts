@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { WorkoutExercise } from 'src/app/_models/workoutExercise.model';
+import { WorkoutService } from '../services/workout.service';
 
 @Component({
   selector: 'app-workout-page',
@@ -15,20 +16,16 @@ export class WorkoutPageComponent implements OnInit {
 
   public dateTime: string;
 
-  exercises: WorkoutExercise[] = 
-  [
-     {id : '1', name: "Pull ups", reps: 8, description :'Wide moves'},
-     {id : '2', name: "Push ups", reps: 9},
-     {id : '3', name: "Dips", reps: 10 }
-  ];
+  exercises: WorkoutExercise[];
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private workoutService: WorkoutService) { }
 
   ngOnInit(): void {
+    this.workoutService.getWorkoutExercises().subscribe(res => this.exercises = res);
   }
 
   addExercise(): void {
-    this.exercises.push({id : '4', name: "Test", reps: 10 });
+    //this.exercises.push({id : '4', name: "Test", reps: 10 });
   }
 
   navigateToWorkoutList(): void {
