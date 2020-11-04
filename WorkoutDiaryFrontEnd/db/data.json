@@ -5,5 +5,11 @@
         {"id" : "2", "dateTime" : "23/10/2020", "description": "Short workout", "workoutType" : "Calisthenics"},
         {"id" : "3", "dateTime" : "18/10/2020", "description" : "New training program", "workoutType" : "Gym"},
         {"id" : "4", "dateTime" : "15/10/2020", "description" : "First Training", "workoutType" : "Gym"}
+    ],
+    "workoutExercises" : 
+    [
+        {"id" : "1", "name" : "Pull ups", "reps" : 8, "description" : "Wide moves"},
+        {"id" : "2", "name": "Push ups", "reps" : 9},
+        {"id" : "3", "name": "Dips", "reps" : 10 }
     ]
 }
