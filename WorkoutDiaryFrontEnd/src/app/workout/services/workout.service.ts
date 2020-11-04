@@ -18,4 +18,8 @@ export class WorkoutService {
   getWorkoutExercises(): Observable<Array<WorkoutExercise>> {
     return this.http.get<Array<WorkoutExercise>>('http://localhost:3000/workoutexercises');
   }
+
+  addWorkoutExercise(exercise: WorkoutExercise): Observable<WorkoutExercise> {
+    return this.http.post<WorkoutExercise>('http://localhost:3000/workoutexercises', exercise);
+  }
 }
