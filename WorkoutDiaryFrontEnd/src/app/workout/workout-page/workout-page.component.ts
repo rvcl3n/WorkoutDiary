@@ -25,7 +25,8 @@ export class WorkoutPageComponent implements OnInit {
   }
 
   addExercise(): void {
-    //this.exercises.push({id : '4', name: "Test", reps: 10 });
+    let workoutExercise: WorkoutExercise = {id : Math.floor(Math.random() * 1000).toString(), name: "Test", reps: 10 };
+    this.workoutService.addWorkoutExercise(workoutExercise).subscribe(exercise => this.exercises.push(exercise));;
   }
 
   navigateToWorkoutList(): void {
