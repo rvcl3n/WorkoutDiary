@@ -8,6 +8,7 @@ import { WorkoutPageComponent } from './workout-page/workout-page.component';
 import { WorkoutExerciseComponent } from './workout-exercise/workout-exercise.component';
 
 import {MatCardModule} from '@angular/material/card';
+import { CreateExerciseModalComponent } from './modals/create-exercise-modal/create-exercise-modal.component';
 
 
 @NgModule({
@@ -15,7 +16,7 @@ import {MatCardModule} from '@angular/material/card';
     WorkoutListComponent, 
     WorkoutCardComponent, 
     WorkoutPageComponent, 
-    WorkoutExerciseComponent
+    WorkoutExerciseComponent, CreateExerciseModalComponent
   ],
   imports: [
     CommonModule,
