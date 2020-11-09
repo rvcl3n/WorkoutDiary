@@ -29,7 +29,12 @@ export class WorkoutPageComponent implements OnInit {
   addExercise(): void {
     //let workoutExercise: WorkoutExercise = {id : Math.floor(Math.random() * 1000).toString(), name: "Test", reps: 10 };
     //this.workoutService.addWorkoutExercise(workoutExercise).subscribe(exercise => this.exercises.push(exercise));
-    this.dialog.open(CreateExerciseModalComponent);
+
+    let dialogConfig = new MatDialogConfig();
+    //dialogConfig.disableClose = true; //commented for testing
+    dialogConfig.autoFocus = true;
+    dialogConfig.width = "60%";
+    this.dialog.open(CreateExerciseModalComponent, dialogConfig);
   }
 
   navigateToWorkoutList(): void {
