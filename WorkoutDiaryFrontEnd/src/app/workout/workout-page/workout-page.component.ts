@@ -31,10 +31,15 @@ export class WorkoutPageComponent implements OnInit {
     //this.workoutService.addWorkoutExercise(workoutExercise).subscribe(exercise => this.exercises.push(exercise));
 
     let dialogConfig = new MatDialogConfig();
-    //dialogConfig.disableClose = true; //commented for testing
+    dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
     dialogConfig.width = "60%";
-    this.dialog.open(CreateExerciseModalComponent, dialogConfig);
+    const dialogRef = this.dialog.open(CreateExerciseModalComponent, dialogConfig);
+
+    dialogRef.afterClosed().subscribe(
+      data => { this.workoutService.addWorkoutExercise(data)
+        .subscribe(exercise => this.exercises.push(exercise));
+      });
   }
 
   navigateToWorkoutList(): void {

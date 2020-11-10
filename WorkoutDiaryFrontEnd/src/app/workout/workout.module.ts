@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { FormsModule } from '@angular/forms';
 
 import { WorkoutListComponent } from './workout-list/workout-list.component';
 import { WorkoutCardComponent } from './workout-card/workout-card.component';
@@ -27,6 +28,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     CommonModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatCardModule,
     MatDialogModule
   ],
