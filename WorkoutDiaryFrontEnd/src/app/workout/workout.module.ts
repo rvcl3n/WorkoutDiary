@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -12,7 +12,8 @@ import { CreateExerciseModalComponent } from './modals/create-exercise-modal/cre
 
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -30,13 +31,13 @@ import { MatDialogModule } from '@angular/material/dialog';
     BrowserAnimationsModule,
     FormsModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   exports: [
     WorkoutListComponent,
-    WorkoutExerciseComponent,
-    //MatDialogModule //need to check if we realy need this (1)
-  ]/*,
-  entryComponents: [CreateExerciseModalComponent]*/ //need to check if we realy need this (2)
+    WorkoutExerciseComponent
+  ]
 })
 export class WorkoutModule { }
