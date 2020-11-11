@@ -1,33 +1,39 @@
-<p>New Exercise</p>
-
+<h1>New Exercise</h1>
+<hr/>
 <form (ngSubmit)="onSubmit()" #workoutExerciseForm="ngForm">
 {{diagnostic}}
-<div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" class="form-control" id="name"
+<br>
+<mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+        <input matInput 
         required
         [(ngModel)]="model.name" name="name">
-</div>
+    </mat-form-field>
+  <br>
 
-<div class="form-group">
-    <label for="sets">Sets</label>
-    <input type="text"  class="form-control" id="sets"
+  <mat-form-field appearance="fill">
+    <mat-label>Sets</mat-label>
+        <input matInput 
         required
         [(ngModel)]="model.sets" name="sets">
-  </div>
+    </mat-form-field>
+  <br>
 
-<div class="form-group">
-    <label for="reps">Reps</label>
-    <input type="text"  class="form-control" id="reps"
+  <mat-form-field appearance="fill">
+    <mat-label>Reps</mat-label>
+        <input matInput 
         required
         [(ngModel)]="model.reps" name="reps">
-</div>
+    </mat-form-field>
+  <br>
 
-<div class="form-group">
-    <label for="description">Description</label>
-    <input type="text"  class="form-control" id="description"
-        [(ngModel)]="model.description" name="description">
-</div>
+  <mat-form-field appearance="fill">
+    <mat-label>Description</mat-label>
+    <textarea matInput 
+    [(ngModel)]="model.description" name="description">
+    </textarea>
+  </mat-form-field>
+
 
 <button type="submit" class="btn btn-success" [disabled]="!workoutExerciseForm.form.valid">Submit</button>
 </form>
