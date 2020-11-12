@@ -3,6 +3,8 @@
 <form (ngSubmit)="onSubmit()" #workoutExerciseForm="ngForm">
 {{diagnostic}}
 <br>
+<div class="container">
+<div class ="column">
 <mat-form-field appearance="fill">
     <mat-label>Name</mat-label>
         <input matInput 
@@ -27,13 +29,18 @@
     </mat-form-field>
   <br>
 
+  </div>
+  <div class ="column">
+
   <mat-form-field appearance="fill">
     <mat-label>Description</mat-label>
-    <textarea matInput 
+    <textarea matInput matTextareaAutosize matAutosizeMinRows=10 matAutosizeMaxRows=15
     [(ngModel)]="model.description" name="description">
     </textarea>
   </mat-form-field>
-
-
-<button type="submit" class="btn btn-success" [disabled]="!workoutExerciseForm.form.valid">Submit</button>
+  </div>
+<div class ="column">
+<button mat-raised-button type="submit" [disabled]="!workoutExerciseForm.form.valid">Submit</button>
+</div>
+</div>
 </form>

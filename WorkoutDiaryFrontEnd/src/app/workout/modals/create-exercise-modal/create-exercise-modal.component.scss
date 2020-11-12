@@ -14,3 +14,13 @@ p {
     font-size: 16px;
     font-weight: 300;
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.container .column {
+    flex: 1 0 50%;
+    height: auto;
+  }
