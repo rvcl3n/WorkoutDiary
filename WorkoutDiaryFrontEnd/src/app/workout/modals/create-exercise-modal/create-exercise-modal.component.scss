@@ -18,9 +18,19 @@ p {
 .container {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
   
 .container .column {
-    flex: 1 0 50%;
+    flex: 1 0 30%;
     height: auto;
   }
+
+.container .columnDescr {
+    flex: 1 0 70%;
+    height: auto;
+  }
+
+#textarea {
+    width: 100%;
+ }
